@@ -1,22 +1,22 @@
-﻿using System;
+using System;
 internal class Program
 {
     static void Main(string[] args)
     {
         int hpBoss = 10000;
         int hpHero = 4000;
-        int damageBoss = 325; //урон босса
-        int damageHero = 150; //урон героя
-        int ghostSword = damageHero; //призрачный клинок
-        bool isGhostSword = false; //проверка на наличие клинка
-        int vampirismDamage = damageHero; //урон при вампиризме
-        int vampirismHeals = damageHero; //востановление хп от урона
-        int raiseTheShield = 0; //поднимает щит - добавляет броню, блокирующую урон
-        int resetShield = 1800; //для восстановления щита
-        int numberOfShields = 2; // всего 2 щита
-        bool isRaiseTheShield = false; //проверка на щит
-        int damageReflection = damageBoss; //возвращает урон босса
-        int healsReflection = damageBoss; //восполняет здоровье = урону босса
+        int damageBoss = 325; 
+        int damageHero = 150; 
+        int ghostSword = damageHero; 
+        bool isGhostSword = false; 
+        int vampirismDamage = damageHero;
+        int vampirismHeals = damageHero; 
+        int raiseTheShield = 0; 
+        int resetShield = 1800; 
+        int numberOfShields = 2; 
+        bool isRaiseTheShield = false; 
+        int damageReflection = damageBoss; 
+        int healsReflection = damageBoss; 
         string choiceUser;
         Console.WriteLine("Финальный БОСС - лишь начало, однако, чтобы идти дальше, ты должен победить его. Используй свои умения и снаряжение с умом, иначе будешь втоптан в землю, на которой стоишь. Удачи.");
         Console.WriteLine($"HP BOSS = {hpBoss}");
@@ -146,7 +146,6 @@ internal class Program
                         Console.WriteLine($"HP BOSS = {hpBoss}");
                         Console.WriteLine($"HP Hero = {hpHero}");
                         Console.WriteLine($"Number of shield = {numberOfShields} \n");
-
                     }
                     else if (isRaiseTheShield == true)
                     {
