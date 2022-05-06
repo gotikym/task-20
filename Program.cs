@@ -35,6 +35,7 @@ internal class Program
             switch (choiceUser)
             {
                 case "1":
+                    
                     if (raiseTheShield > 0)
                     {
                         isGhostSword = true;
@@ -74,6 +75,7 @@ internal class Program
                             hpBoss -= vampirismDamage;
                             hpHero += vampirismHeals;
                             raiseTheShield -= damageBoss;
+                            
                             if (raiseTheShield < 0)
                             {
                                 isRaiseTheShield = false;
@@ -125,6 +127,7 @@ internal class Program
                         Console.WriteLine($"Вы достали щит, у вас осталось {numberOfShields} щитов");
                         hpBoss -= damageHero;
                         raiseTheShield -= damageBoss;
+                        
                         if (raiseTheShield < 0)
                         {
                             isRaiseTheShield = false;
@@ -140,6 +143,7 @@ internal class Program
                     Console.WriteLine($"HP Shield = {raiseTheShield} \n");
                     break;
                 case "4":
+                    
                     if (isRaiseTheShield == false)
                     {
                         Console.WriteLine("Сперва нужно достать щит, если он есть.. =)");
@@ -152,6 +156,7 @@ internal class Program
                         hpBoss -= damageReflection;
                         hpHero += healsReflection;
                         raiseTheShield -= damageBoss;
+                        
                         if (raiseTheShield < 0)
                         {
                             hpHero -= raiseTheShield;
