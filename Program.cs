@@ -32,6 +32,7 @@ internal class Program
         while (hpBoss >= 0 && 0 <= hpHero)
         {
             choiceUser = Console.ReadLine();
+            
             switch (choiceUser)
             {
                 case "1":
