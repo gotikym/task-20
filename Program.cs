@@ -52,10 +52,12 @@ internal class Program
                             Console.WriteLine($"HP Shield = отсутствует \n");
                             break;
                         }
+                        
                         Console.WriteLine($"HP BOSS = {hpBoss}");
                         Console.WriteLine($"HP Hero = {hpHero}");
                         Console.WriteLine($"HP Shield = {raiseTheShield} \n");
                     }
+                    
                     else if (raiseTheShield <= 0)
                     {
                         isGhostSword = true;
@@ -65,7 +67,9 @@ internal class Program
                         Console.WriteLine($"HP Hero = {hpHero}");
                         Console.WriteLine($"HP Shield = отсутствует \n");
                     }
+                    
                     break;
+                    
                 case "2":
 
                     if (raiseTheShield > 0)
@@ -86,6 +90,7 @@ internal class Program
                                 Console.WriteLine($"HP Shield = щит сломан \n");
                                 break;
                             }
+                            
                             Console.WriteLine($"HP BOSS = {hpBoss}");
                             Console.WriteLine($"HP Hero = {hpHero}");
                             Console.WriteLine($"HP Shield = {raiseTheShield} \n");
@@ -113,6 +118,7 @@ internal class Program
                         }
                     }
                     break;
+                    
                 case "3":
 
                     if (numberOfShields == 0)
@@ -120,6 +126,7 @@ internal class Program
                         Console.WriteLine("У вас больше нет щитов");
                         break;
                     }
+                    
                     else if (numberOfShields > 0)
                     {
                         raiseTheShield = resetShield;
@@ -139,10 +146,12 @@ internal class Program
                             break;
                         }
                     }
+                    
                     Console.WriteLine($"HP BOSS = {hpBoss}");
                     Console.WriteLine($"HP Hero = {hpHero}");
                     Console.WriteLine($"HP Shield = {raiseTheShield} \n");
                     break;
+                    
                 case "4":
                     
                     if (isRaiseTheShield == false)
@@ -152,6 +161,7 @@ internal class Program
                         Console.WriteLine($"HP Hero = {hpHero}");
                         Console.WriteLine($"Number of shield = {numberOfShields} \n");
                     }
+                    
                     else if (isRaiseTheShield == true)
                     {
                         hpBoss -= damageReflection;
@@ -167,16 +177,19 @@ internal class Program
                             Console.WriteLine($"HP Shield = щит сломан \n");
                             break;
                         }
+                        
                         Console.WriteLine($"HP BOSS = {hpBoss}");
                         Console.WriteLine($"HP Hero = {hpHero}");
                         Console.WriteLine($"HP Shield = {raiseTheShield} \n");
                     }
                     break;
             }
+            
             if (hpBoss <= 0)
             {
                 Console.WriteLine("Хорош, я в тебя верил, БОСС пал");
             }
+            
             else if (hpHero <= 0)
             {
                 Console.WriteLine("Герой был разорван на части");
